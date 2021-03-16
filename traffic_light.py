@@ -37,7 +37,7 @@ def add_to_output(circles, mask, text, output):
             if test:
                 print(text)
                 cv2.circle(output, tuple(center), radius, (0, 255, 0), 2)
-                cv2.putText(output,f'{text} {t:.2f} {radius}',tuple(center), font, 0.5,(255,0,0),1,cv2.LINE_AA)
+                cv2.putText(output,f'{text}',tuple(center), font, 0.5,(255,0,0),1,cv2.LINE_AA)
 
 def recognize(input_file):
     MIN_RADIUS = 0
